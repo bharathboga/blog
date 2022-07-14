@@ -3,17 +3,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YXS2Z84815"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-YXS2Z84815');
-        </script>
-
 <title>Bharath | ….</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Bharath" />
@@ -29,7 +18,11 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","description":"….","headline":"Bharath","name":"Bharath","url":"http://localhost:4000/blog/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Bharath" /></head>
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Bharath" />
+{% if site.google_analytics and jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Bharath</a><nav class="site-nav">
